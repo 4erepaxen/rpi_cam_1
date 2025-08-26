@@ -38,7 +38,7 @@ def capture():
     print("Sending photo to " + str(chat_id))
     bot.sendPhoto(chat_id, photo = open('./photo.jpg', 'rb'))
 
-with open("~/token.txt", "r", encoding="utf-8") as f:
+with open("/home/admin/token.txt", "r", encoding="utf-8") as f:
     token = f.read()
     bot = telepot.Bot(token)
     bot.message_loop(handle)
